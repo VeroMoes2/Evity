@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="evity-logo.png?v=1" alt="Evity Logo" class="logo" onerror="this.src='logo.svg'">
+                    <span class="logo-text">Evity</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#membresias" class="nav-link">Membresías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#articulos" class="nav-link">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactos" class="nav-link">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mas-info" class="nav-link">Más información</a>
+                    </li>
+                </ul>
+                <div class="nav-auth">
+                    <a href="#login" class="btn-secondary">Iniciar sesión</a>
+                    <a href="#register" class="btn-primary">Registrarse</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <img src="evity-logo.png?v=1" alt="Evity Logo" class="hero-logo-img" onerror="this.src='logo.svg'">
+                        <h1 class="hero-title">Evity</h1>
+                    </div>
+                    <p class="hero-tagline">
+                        Acompañándote a vivir más y a vivir mejor, el futuro de tu salud empieza hoy.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#register" class="btn-primary-large">Comenzar ahora</a>
+                        <a href="#mas-info" class="btn-secondary-large">Conoce más</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-graphic">
+                        <div class="floating-card card-1">
+                            <div class="card-icon">🩺</div>
+                            <span>Consultoría médica</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-icon">📊</div>
+                            <span>Reportes de salud</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="card-icon">🎯</div>
+                            <span>Prevención</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Preview -->
+        <section class="features-preview">
+            <div class="container">
+                <h2 class="section-title">Tu salud, nuestra prioridad</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍⚕️</div>
+                        <h3>Para médicos</h3>
+                        <p>Base de datos completa y consultoría especializada en síntomas y estudios médicos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏥</div>
+                        <h3>Para pacientes</h3>
+                        <p>Coaching personalizado, reportes semanales y seguimiento de tu progreso de salud.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔬</div>
+                        <h3>Longevidad</h3>
+                        <p>Implementamos las mejores prácticas de longevidad y prevención de enfermedades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder sections for navigation -->
+        <section id="membresias" class="section-placeholder">
+            <div class="container">
+                <h2>Membresías</h2>
+                <p>Próximamente: Planes y membresías personalizadas para tu salud.</p>
+            </div>
+        </section>
+
+        <section id="articulos" class="section-placeholder">
+            <div class="container">
+                <h2>Artículos</h2>
+                <p>Próximamente: Artículos especializados en salud y longevidad.</p>
+            </div>
+        </section>
+
+        <section id="contactos" class="section-placeholder">
+            <div class="container">
+                <h2>Contactos</h2>
+                <p>Próximamente: Información de contacto y formulario.</p>
+            </div>
+        </section>
+
+        <section id="mas-info" class="section-placeholder">
+            <div class="container">
+                <h2>Más información</h2>
+                <p>Próximamente: Información detallada sobre Evity y nuestros servicios.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Evity</span>
+                    <p>El futuro de tu salud empieza hoy</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#membresias">Membresías</a>
+                    <a href="#articulos">Artículos</a>
+                    <a href="#contactos">Contactos</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Evity. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
