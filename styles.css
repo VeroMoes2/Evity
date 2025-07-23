@@ -391,11 +391,24 @@ body {
     font-weight: 400;
 }
 
-.pilares-grid {
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 3rem;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .pilar-card {
@@ -460,8 +473,21 @@ body {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .feature-card {
