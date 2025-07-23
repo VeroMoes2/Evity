@@ -186,7 +186,7 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%),
-                url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+                url('hero-background.jpg') center/cover no-repeat;
     background-attachment: fixed;
 }
 
@@ -243,19 +243,24 @@ body {
 
 .hero-description {
     background: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem 2.5rem;
+    padding: 1.2rem 2.5rem;
     border-radius: 50px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    max-width: 90%;
 }
 
 .hero-description p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.2;
     font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Chatbot Button */
@@ -500,12 +505,17 @@ body {
     }
 
     .hero-description {
-        padding: 1.2rem 2rem;
+        padding: 1rem 1.5rem;
         margin: 0 10px;
+        max-width: 95%;
     }
 
     .hero-description p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+        line-height: 1.3;
     }
 
     .chatbot-container {
