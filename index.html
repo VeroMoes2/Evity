@@ -49,20 +49,31 @@
     <!-- Hero Section -->
     <main>
         <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">Evity</h1>
                     <p class="hero-tagline">
-                        Acompañándote a vivir más y a vivir mejor, el futuro de tu salud empieza hoy.
+                        Tu guía para vivir más y mejor.
                     </p>
-                    <div class="hero-cta">
-                        <a href="#register" class="btn-primary-large">Comenzar ahora</a>
-                        <a href="#mas-info" class="btn-secondary-large">Conoce más</a>
+                    <div class="hero-description">
+                        <p>Accede a contenido, orientación médica y herramientas personalizadas para extender tu salud y bienestar.</p>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <img src="evity-logo.png?v=1" alt="Evity Logo" class="hero-main-logo" onerror="this.src='logo.svg'">
-                </div>
+            </div>
+            <!-- Chatbot Button -->
+            <div class="chatbot-container">
+                <button class="chatbot-btn" onclick="openChatbot()">
+                    <div class="chatbot-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.36 14.99 3.01 16.28L2 22L7.72 20.99C9.01 21.64 10.46 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C10.74 20 9.54 19.75 8.46 19.3L6 20L6.7 17.54C6.25 16.46 6 15.26 6 14C6 8.48 8.48 6 12 6C15.52 6 18 8.48 18 12C18 15.52 15.52 18 12 18Z" fill="currentColor"/>
+                            <circle cx="9" cy="12" r="1" fill="currentColor"/>
+                            <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                            <circle cx="15" cy="12" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span class="chatbot-text">ChatBot</span>
+                </button>
             </div>
         </section>
 

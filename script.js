@@ -138,6 +138,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Chatbot functionality
+function openChatbot() {
+    showNotification('¡Próximamente! El ChatBot de Evity estará disponible pronto para ayudarte con consultas médicas y de salud.', 'info');
+}
+
 // Utility function for future API calls
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
@@ -156,6 +161,9 @@ function showNotification(message, type = 'info') {
         z-index: 10000;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+        max-width: 300px;
+        font-size: 0.9rem;
+        line-height: 1.4;
     `;
     
     document.body.appendChild(notification);
@@ -169,5 +177,5 @@ function showNotification(message, type = 'info') {
         setTimeout(() => {
             document.body.removeChild(notification);
         }, 300);
-    }, 3000);
+    }, 4000);
 }
