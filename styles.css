@@ -327,6 +327,81 @@ body {
     background: var(--light-gray);
 }
 
+/* Proceso Evity Section */
+.proceso-evity {
+    padding: 6rem 0;
+    background: var(--warm-white);
+}
+
+.proceso-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    font-weight: 400;
+}
+
+.pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pilar-card {
+    background: var(--warm-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(6, 182, 212, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pilar-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pilar-card:hover::before {
+    transform: scaleX(1);
+}
+
+.pilar-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.pilar-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
+}
+
+.pilar-card p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -542,6 +617,39 @@ body {
 
     .features-grid {
         grid-template-columns: 1fr;
+    }
+
+    .proceso-evity {
+        padding: 4rem 0;
+    }
+
+    .proceso-description {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        padding: 0 10px;
+    }
+
+    .pilares-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .pilar-card {
+        padding: 2rem;
+    }
+
+    .pilar-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .pilar-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .pilar-card p {
+        font-size: 0.9rem;
     }
 
     .footer-content {
