@@ -16,7 +16,7 @@ Evity es una plataforma innovadora que conecta médicos y pacientes, implementan
 
 ## Características del Sitio Web
 
-### Fase 1 - Sitio Web Oficial ✅
+### Fase 1 - Sitio Web Oficial ✓
 - **Navegación completa**: Inicio, Membresías, Artículos, Contactos, Más información
 - **Autenticación**: Registro e Inicio de sesión
 - **Diseño responsivo**: Optimizado para móviles y desktop

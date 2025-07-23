@@ -79,22 +79,22 @@
                 <h2 class="section-title">Tu salud, nuestra prioridad</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">👨‍⚕️</div>
+                        <div class="feature-icon">⚕️</div>
                         <h3>Para médicos</h3>
                         <p>Base de datos completa y consultoría especializada en síntomas y estudios médicos.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🏥</div>
+                        <div class="feature-icon">⚕️</div>
                         <h3>Para pacientes</h3>
                         <p>Coaching personalizado, reportes semanales y seguimiento de tu progreso de salud.</p>
                     </div>
                     <div class="feature-card clickable-card" onclick="navigateToSection('longevidad-page')">
-                        <div class="feature-icon">🔬</div>
+                        <div class="feature-icon">⚕️</div>
                         <h3>Longevidad para todos</h3>
                         <p>Implementamos las mejores prácticas de longevidad y prevención de enfermedades.</p>
                     </div>
                     <div class="feature-card clickable-card" onclick="navigateToSection('proceso-evity')">
-                        <div class="feature-icon">🌟</div>
+                        <div class="feature-icon">⚕️</div>
                         <h3>Proceso Evity</h3>
                         <p>Descubre nuestro enfoque integral que cuida todos los pilares de una vida plena y saludable.</p>
                     </div>
@@ -102,6 +102,78 @@
             </div>
         </section>
 
+        </div>
+
+        <!-- Recursos Visuales Page (Hidden by default) -->
+        <div id="recursos-visuales-page" class="page-content">
+            <section class="recursos-visuales-full">
+                <div class="container">
+                    <!-- Back Button -->
+                    <button class="back-btn" onclick="navigateToLongevidadPage()">
+                        <span class="back-icon">←</span>
+                        <span>Volver a Longevidad</span>
+                    </button>
+                    
+                    <h2 class="section-title">Recursos Visuales</h2>
+                    <p class="recursos-subtitle">
+                        Videos educativos e infografías para tu bienestar
+                    </p>
+                    
+                    <!-- Video Gallery -->
+                    <div class="video-gallery">
+                        <div class="video-card featured">
+                            <div class="video-container">
+                                <video class="main-video" controls poster="">
+                                    <source src="E1.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento de video.
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h3>Video Educativo - Longevidad y Bienestar</h3>
+                                <p>Contenido especializado sobre hábitos saludables y prácticas de longevidad para mejorar tu calidad de vida.</p>
+                                <div class="video-tags">
+                                    <span class="tag">Longevidad</span>
+                                    <span class="tag">Bienestar</span>
+                                    <span class="tag">Salud</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Placeholder for future videos -->
+                        <div class="video-card placeholder">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">▶</div>
+                                <h4>Más videos próximamente</h4>
+                                <p>Estamos preparando más contenido educativo para ti</p>
+                            </div>
+                        </div>
+                        
+                        <div class="video-card placeholder">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">↗</div>
+                                <h4>Infografías interactivas</h4>
+                                <p>Próximamente: guías visuales sobre nutrición y ejercicio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ChatBot Button for Recursos Page -->
+                    <div class="recursos-chatbot-container">
+                        <button class="chatbot-btn" onclick="openChatbot()">
+                            <div class="chatbot-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.36 14.99 3.01 16.28L2 22L7.72 20.99C9.01 21.64 10.46 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C10.74 20 9.54 19.75 8.46 19.3L6 20L6.7 17.54C6.25 16.46 6 15.26 6 14C6 8.48 8.48 6 12 6C15.52 6 18 8.48 18 12C18 15.52 15.52 18 12 18Z" fill="currentColor"/>
+                                    <circle cx="9" cy="12" r="1" fill="currentColor"/>
+                                    <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                                    <circle cx="15" cy="12" r="1" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span class="chatbot-text">ChatBot</span>
+                        </button>
+                        <p class="chatbot-description">Dudas sobre el contenido visual</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- Longevidad Page (Hidden by default) -->
@@ -121,19 +193,19 @@
                     
                     <div class="longevidad-grid">
                         <div class="longevidad-card">
-                            <div class="longevidad-icon">📝</div>
+                            <div class="longevidad-icon">✎</div>
                             <h3>Blog con artículos</h3>
                             <p>Artículos especializados sobre longevidad, salud preventiva y bienestar respaldados por evidencia científica.</p>
                             <button class="card-action-btn">Explorar Artículos</button>
                         </div>
                         <div class="longevidad-card">
-                            <div class="longevidad-icon">🎥</div>
+                            <div class="longevidad-icon">▶</div>
                             <h3>Recursos visuales</h3>
                             <p>Videos educativos, infografías y contenido visual para aprender de forma dinámica sobre hábitos saludables.</p>
-                            <button class="card-action-btn">Ver Recursos</button>
+                            <button class="card-action-btn" onclick="navigateToSection('recursos-visuales-page')">Ver Recursos</button>
                         </div>
                         <div class="longevidad-card">
-                            <div class="longevidad-icon">🛠️</div>
+                            <div class="longevidad-icon">⚙</div>
                             <h3>Herramientas</h3>
                             <p>Checklist personalizados, autoevaluaciones de salud y retos para implementar cambios positivos en tu vida.</p>
                             <button class="card-action-btn">Acceder Herramientas</button>
@@ -181,12 +253,12 @@
                             <p>Planes alimentarios personalizados y educación nutricional para optimizar tu energía y salud.</p>
                         </div>
                         <div class="pilar-card">
-                            <div class="pilar-icon">😴</div>
+                            <div class="pilar-icon">◐</div>
                             <h3>Sueño</h3>
                             <p>Estrategias para mejorar la calidad del descanso y establecer rutinas de sueño reparador.</p>
                         </div>
                         <div class="pilar-card">
-                            <div class="pilar-icon">🧘‍♀️</div>
+                            <div class="pilar-icon">◯</div>
                             <h3>Manejo del Estrés</h3>
                             <p>Técnicas de relajación y mindfulness para reducir el estrés y mejorar tu bienestar emocional.</p>
                         </div>
@@ -196,12 +268,12 @@
                             <p>Apoyo psicológico y herramientas para mantener una mente sana y equilibrada.</p>
                         </div>
                         <div class="pilar-card">
-                            <div class="pilar-icon">💪</div>
+                            <div class="pilar-icon">▲</div>
                             <h3>Ejercicio Físico</h3>
                             <p>Rutinas de ejercicio adaptadas a tu nivel y objetivos para mantener tu cuerpo fuerte y saludable.</p>
                         </div>
                         <div class="pilar-card">
-                            <div class="pilar-icon">❤️</div>
+                            <div class="pilar-icon">♥</div>
                             <h3>Bienestar Integral</h3>
                             <p>Enfoque holístico que conecta todos los aspectos de tu salud para una vida plena y longeva.</p>
                         </div>

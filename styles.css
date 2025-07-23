@@ -336,6 +336,176 @@ body {
     display: block;
 }
 
+/* Recursos Visuales Full Page */
+.recursos-visuales-full {
+    padding: 6rem 0;
+    background: var(--warm-white);
+    min-height: 100vh;
+}
+
+.recursos-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.video-card {
+    background: var(--warm-white);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(6, 182, 212, 0.1);
+}
+
+.video-card.featured {
+    border: 2px solid var(--turquoise);
+    box-shadow: 0 15px 50px rgba(6, 182, 212, 0.15);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.main-video {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    display: block;
+}
+
+.video-info {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.video-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
+}
+
+.video-info p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.video-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.video-card.placeholder {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 2px dashed rgba(6, 182, 212, 0.3);
+}
+
+.placeholder-content {
+    padding: 3rem;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.placeholder-content h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--deep-blue);
+}
+
+.placeholder-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.recursos-chatbot-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Responsive for video gallery */
+@media (min-width: 1200px) {
+    .video-gallery {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+    
+    .video-card.featured {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        margin: 0;
+    }
+    
+    .main-video {
+        max-height: 250px;
+    }
+    
+    .video-info {
+        padding: 1.5rem;
+    }
+    
+    .video-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .video-tags {
+        gap: 0.5rem;
+    }
+    
+    .tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
 /* Longevidad Full Page */
 .longevidad-full {
     padding: 6rem 0;

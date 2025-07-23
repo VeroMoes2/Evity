@@ -163,7 +163,7 @@ function navigateToSection(sectionId) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         
         // Show notification
-        showNotification('Navegando a Proceso Evity 🌟', 'success');
+        showNotification('Navegando a Proceso Evity ✓', 'success');
     } else if (sectionId === 'longevidad-page') {
         // Hide home page and show Longevidad page
         document.getElementById('home-page').classList.remove('active');
@@ -173,7 +173,19 @@ function navigateToSection(sectionId) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         
         // Show notification
-        showNotification('Navegando a Longevidad para todos 🔬', 'success');
+        showNotification('Navegando a Longevidad para todos ✓', 'success');
+    } else if (sectionId === 'recursos-visuales-page') {
+        // Hide all pages and show Recursos Visuales page
+        document.getElementById('home-page').classList.remove('active');
+        document.getElementById('longevidad-page').classList.remove('active');
+        document.getElementById('proceso-evity-page').classList.remove('active');
+        document.getElementById('recursos-visuales-page').classList.add('active');
+        
+        // Scroll to top of new page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Show notification
+        showNotification('Navegando a Recursos Visuales ✓', 'success');
     }
 }
 
@@ -182,13 +194,27 @@ function navigateToHome() {
     // Hide all other pages and show home page
     document.getElementById('proceso-evity-page').classList.remove('active');
     document.getElementById('longevidad-page').classList.remove('active');
+    document.getElementById('recursos-visuales-page').classList.remove('active');
     document.getElementById('home-page').classList.add('active');
     
     // Scroll to top of home page
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
     // Show notification
-    showNotification('Regresando al Inicio 🏠', 'success');
+    showNotification('Regresando al Inicio ✓', 'success');
+}
+
+// Navigate back to Longevidad page from Recursos Visuales
+function navigateToLongevidadPage() {
+    // Hide Recursos Visuales page and show Longevidad page
+    document.getElementById('recursos-visuales-page').classList.remove('active');
+    document.getElementById('longevidad-page').classList.add('active');
+    
+    // Scroll to top of Longevidad page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Show notification
+    showNotification('Regresando a Longevidad para todos ✓', 'success');
 }
 
 // Utility function for future API calls
