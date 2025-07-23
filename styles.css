@@ -1030,7 +1030,18 @@ body {
     }
 
     .nav-auth {
-        display: none;
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .nav-auth .btn-primary,
+    .nav-auth .btn-secondary {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        border-radius: 6px;
     }
 }
 
