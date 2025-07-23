@@ -136,11 +136,43 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.opacity = '1';
         }, 100);
     });
+
+    // Add click handlers for feature cards
+    const featureCardLinks = document.querySelectorAll('.feature-card a');
+    featureCardLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            navigateToSection('proceso-evity');
+        });
+    });
 });
 
 // Chatbot functionality
 function openChatbot() {
-    showNotification('¡Próximamente! El ChatBot de Evity estará disponible pronto para ayudarte con consultas médicas y de salud.', 'info');
+    showNotification('¡ChatBot próximamente disponible! 🤖', 'info');
+}
+
+// Navigation to sections
+function navigateToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+        
+        // Update active navigation if needed
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+            }
+        });
+        
+        // Show notification
+        showNotification('Navegando a Proceso Evity 🌟', 'success');
+    }
 }
 
 // Utility function for future API calls
