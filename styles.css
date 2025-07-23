@@ -336,6 +336,115 @@ body {
     display: block;
 }
 
+/* Longevidad Full Page */
+.longevidad-full {
+    padding: 6rem 0;
+    background: var(--warm-white);
+    min-height: 100vh;
+}
+
+.longevidad-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.longevidad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.longevidad-card {
+    background: var(--warm-white);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(6, 182, 212, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.longevidad-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--primary-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.longevidad-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(6, 182, 212, 0.15);
+    border-color: var(--turquoise);
+}
+
+.longevidad-card:hover::before {
+    transform: scaleX(1);
+}
+
+.longevidad-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.longevidad-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+    margin-bottom: 1.5rem;
+}
+
+.longevidad-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-action-btn {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.card-action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+}
+
+.longevidad-chatbot-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.chatbot-description {
+    margin-top: 1rem;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 /* Proceso Evity Full Page */
 .proceso-evity-full {
     padding: 6rem 0;

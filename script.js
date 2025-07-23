@@ -164,13 +164,24 @@ function navigateToSection(sectionId) {
         
         // Show notification
         showNotification('Navegando a Proceso Evity 🌟', 'success');
+    } else if (sectionId === 'longevidad-page') {
+        // Hide home page and show Longevidad page
+        document.getElementById('home-page').classList.remove('active');
+        document.getElementById('longevidad-page').classList.add('active');
+        
+        // Scroll to top of new page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Show notification
+        showNotification('Navegando a Longevidad para todos 🔬', 'success');
     }
 }
 
 // Navigate back to home
 function navigateToHome() {
-    // Hide Proceso Evity page and show home page
+    // Hide all other pages and show home page
     document.getElementById('proceso-evity-page').classList.remove('active');
+    document.getElementById('longevidad-page').classList.remove('active');
     document.getElementById('home-page').classList.add('active');
     
     // Scroll to top of home page
