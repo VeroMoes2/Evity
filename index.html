@@ -48,29 +48,105 @@
 
     <!-- Hero Section -->
     <main>
-        <section id="inicio" class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Evity</h1>
-                    <p class="hero-tagline">
-                        Tu guía para vivir más y mejor.
-                    </p>
-                    <div class="hero-description">
-                        <p>Accede a contenido, orientación médica y herramientas personalizadas para extender tu salud y bienestar.</p>
+        <div id="home-page" class="page-content active">
+            <section id="inicio" class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Evity</h1>
+                        <p class="hero-tagline">Acompañándote a vivir más y a vivir mejor</p>
+                        <div class="hero-description">
+                            <p>Accede a contenido, orientación médica y herramientas personalizadas para extender tu salud y bienestar.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Chatbot Button -->
-            <div class="chatbot-container">
-                <button class="chatbot-btn" onclick="openChatbot()">
-                    <div class="chatbot-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.36 14.99 3.01 16.28L2 22L7.72 20.99C9.01 21.64 10.46 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C10.74 20 9.54 19.75 8.46 19.3L6 20L6.7 17.54C6.25 16.46 6 15.26 6 14C6 8.48 8.48 6 12 6C15.52 6 18 8.48 18 12C18 15.52 15.52 18 12 18Z" fill="currentColor"/>
-                            <circle cx="9" cy="12" r="1" fill="currentColor"/>
-                            <circle cx="12" cy="12" r="1" fill="currentColor"/>
-                            <circle cx="15" cy="12" r="1" fill="currentColor"/>
-                        </svg>
+                <!-- Chatbot Button -->
+                <div class="chatbot-container">
+                    <button class="chatbot-btn" onclick="openChatbot()">
+                        <div class="chatbot-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.36 14.99 3.01 16.28L2 22L7.72 20.99C9.01 21.64 10.46 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C10.74 20 9.54 19.75 8.46 19.3L6 20L6.7 17.54C6.25 16.46 6 15.26 6 14C6 8.48 8.48 6 12 6C15.52 6 18 8.48 18 12C18 15.52 15.52 18 12 18Z" fill="currentColor"/>
+                                <circle cx="9" cy="12" r="1" fill="currentColor"/>
+                                <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                                <circle cx="15" cy="12" r="1" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span class="chatbot-text">ChatBot</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Features Preview -->
+            <section class="features-preview">
+                <div class="container">
+                    <h2 class="section-title">Tu salud, nuestra prioridad</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">👨‍⚕️</div>
+                            <h3>Para médicos</h3>
+                            <p>Base de datos completa y consultoría especializada en síntomas y estudios médicos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏥</div>
+                            <h3>Para pacientes</h3>
+                            <p>Coaching personalizado, reportes semanales y seguimiento de tu progreso de salud.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔬</div>
+                            <h3>Longevidad para todos</h3>
+                            <p>Implementamos las mejores prácticas de longevidad y prevención de enfermedades.</p>
+                        </div>
+                        <div class="feature-card clickable-card" onclick="navigateToSection('proceso-evity')">
+                            <div class="feature-icon">🌟</div>
+                            <h3>Proceso Evity</h3>
+                            <p>Descubre nuestro enfoque integral que cuida todos los pilares de una vida plena y saludable.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proceso Evity Section -->
+            <section id="proceso-evity" class="proceso-evity section-placeholder">
+                <div class="container">
+                    <h2 class="section-title">Proceso Evity</h2>
+                    <p class="proceso-description">
+                        En Evity cuidamos todos los pilares fundamentales que hacen una vida plena y saludable. 
+                        Nuestro enfoque integral abarca cada aspecto de tu bienestar para ayudarte a vivir más y mejor.
+                    </p>
+                    <div class="pilares-grid">
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🥗</div>
+                            <h3>Nutrición</h3>
+                            <p>Planes alimentarios personalizados y educación nutricional para optimizar tu energía y salud.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">😴</div>
+                            <h3>Sueño</h3>
+                            <p>Estrategias para mejorar la calidad del descanso y establecer rutinas de sueño reparador.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🧘‍♀️</div>
+                            <h3>Manejo del Estrés</h3>
+                            <p>Técnicas de relajación y mindfulness para reducir el estrés y mejorar tu bienestar emocional.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🧠</div>
+                            <h3>Salud Mental</h3>
+                            <p>Apoyo psicológico y herramientas para mantener una mente sana y equilibrada.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">💪</div>
+                            <h3>Ejercicio Físico</h3>
+                            <p>Rutinas de ejercicio adaptadas a tu nivel y objetivos para mantener tu cuerpo fuerte y saludable.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">❤️</div>
+                            <h3>Bienestar Integral</h3>
+                            <p>Enfoque holístico que conecta todos los aspectos de tu salud para una vida plena y longeva.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
                     </div>
                     <span class="chatbot-text">ChatBot</span>
                 </button>
@@ -106,48 +182,58 @@
             </div>
         </section>
 
-        <!-- Proceso Evity Section -->
-        <section id="proceso-evity" class="proceso-evity section-placeholder">
-            <div class="container">
-                <h2 class="section-title">Proceso Evity</h2>
-                <p class="proceso-description">
-                    En Evity cuidamos todos los pilares fundamentales que hacen una vida plena y saludable. 
-                    Nuestro enfoque integral abarca cada aspecto de tu bienestar para ayudarte a vivir más y mejor.
-                </p>
-                <div class="pilares-grid">
-                    <div class="pilar-card">
-                        <div class="pilar-icon">🥗</div>
-                        <h3>Nutrición</h3>
-                        <p>Planes alimentarios personalizados y educación nutricional para optimizar tu energía y salud.</p>
-                    </div>
-                    <div class="pilar-card">
-                        <div class="pilar-icon">😴</div>
-                        <h3>Sueño</h3>
-                        <p>Estrategias para mejorar la calidad del descanso y establecer rutinas de sueño reparador.</p>
-                    </div>
-                    <div class="pilar-card">
-                        <div class="pilar-icon">🧘‍♀️</div>
-                        <h3>Manejo del Estrés</h3>
-                        <p>Técnicas de relajación y mindfulness para reducir el estrés y mejorar tu bienestar emocional.</p>
-                    </div>
-                    <div class="pilar-card">
-                        <div class="pilar-icon">🧠</div>
-                        <h3>Salud Mental</h3>
-                        <p>Apoyo psicológico y herramientas para mantener una mente sana y equilibrada.</p>
-                    </div>
-                    <div class="pilar-card">
-                        <div class="pilar-icon">💪</div>
-                        <h3>Ejercicio Físico</h3>
-                        <p>Rutinas de ejercicio adaptadas a tu nivel y objetivos para mantener tu cuerpo fuerte y saludable.</p>
-                    </div>
-                    <div class="pilar-card">
-                        <div class="pilar-icon">❤️</div>
-                        <h3>Bienestar Integral</h3>
-                        <p>Enfoque holístico que conecta todos los aspectos de tu salud para una vida plena y longeva.</p>
+        </div>
+
+        <!-- Proceso Evity Page (Hidden by default) -->
+        <div id="proceso-evity-page" class="page-content">
+            <section class="proceso-evity-full">
+                <div class="container">
+                    <!-- Back Button -->
+                    <button class="back-btn" onclick="navigateToHome()">
+                        <span class="back-icon">←</span>
+                        <span>Volver al Inicio</span>
+                    </button>
+                    
+                    <h2 class="section-title">Proceso Evity</h2>
+                    <p class="proceso-description">
+                        En Evity cuidamos todos los pilares fundamentales que hacen una vida plena y saludable. 
+                        Nuestro enfoque integral abarca cada aspecto de tu bienestar para ayudarte a vivir más y mejor.
+                    </p>
+                    <div class="pilares-grid">
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🥗</div>
+                            <h3>Nutrición</h3>
+                            <p>Planes alimentarios personalizados y educación nutricional para optimizar tu energía y salud.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">😴</div>
+                            <h3>Sueño</h3>
+                            <p>Estrategias para mejorar la calidad del descanso y establecer rutinas de sueño reparador.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🧘‍♀️</div>
+                            <h3>Manejo del Estrés</h3>
+                            <p>Técnicas de relajación y mindfulness para reducir el estrés y mejorar tu bienestar emocional.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">🧠</div>
+                            <h3>Salud Mental</h3>
+                            <p>Apoyo psicológico y herramientas para mantener una mente sana y equilibrada.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">💪</div>
+                            <h3>Ejercicio Físico</h3>
+                            <p>Rutinas de ejercicio adaptadas a tu nivel y objetivos para mantener tu cuerpo fuerte y saludable.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <div class="pilar-icon">❤️</div>
+                            <h3>Bienestar Integral</h3>
+                            <p>Enfoque holístico que conecta todos los aspectos de tu salud para una vida plena y longeva.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- Placeholder sections for navigation -->
         <section id="membresias" class="section-placeholder">

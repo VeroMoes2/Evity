@@ -327,7 +327,55 @@ body {
     background: var(--light-gray);
 }
 
-/* Proceso Evity Section */
+/* Single Page Application Styles */
+.page-content {
+    display: none;
+}
+
+.page-content.active {
+    display: block;
+}
+
+/* Proceso Evity Full Page */
+.proceso-evity-full {
+    padding: 6rem 0;
+    background: var(--warm-white);
+    min-height: 100vh;
+}
+
+/* Back Button */
+.back-btn {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+}
+
+.back-btn:active {
+    transform: translateY(0);
+}
+
+.back-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Proceso Evity Section (Legacy) */
 .proceso-evity {
     padding: 6rem 0;
     background: var(--warm-white);

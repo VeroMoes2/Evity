@@ -152,27 +152,32 @@ function openChatbot() {
     showNotification('¡ChatBot próximamente disponible! 🤖', 'info');
 }
 
-// Navigation to sections
+// Single Page Application Navigation
 function navigateToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
-        });
+    if (sectionId === 'proceso-evity') {
+        // Hide home page and show Proceso Evity page
+        document.getElementById('home-page').classList.remove('active');
+        document.getElementById('proceso-evity-page').classList.add('active');
         
-        // Update active navigation if needed
-        const navLinks = document.querySelectorAll('.nav-menu a');
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${sectionId}`) {
-                link.classList.add('active');
-            }
-        });
+        // Scroll to top of new page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         
         // Show notification
         showNotification('Navegando a Proceso Evity 🌟', 'success');
     }
+}
+
+// Navigate back to home
+function navigateToHome() {
+    // Hide Proceso Evity page and show home page
+    document.getElementById('proceso-evity-page').classList.remove('active');
+    document.getElementById('home-page').classList.add('active');
+    
+    // Scroll to top of home page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Show notification
+    showNotification('Regresando al Inicio 🏠', 'success');
 }
 
 // Utility function for future API calls
